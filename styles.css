@@ -1,3 +1,51 @@
 *{
-    background-color: #000000;
+    background-color: #CECECE;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    font-size: 52px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 4rem;
+    max-width: 80rem;
+
+}
+#buttonContainer{
+    display: flex;
+    justify-self: start;
+    
+}
+button{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0.5rem;
+}
+#paintEraseContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#paintEraseContainer > button{
+    width: 7rem;
+
+}
+
+#pixelContainer{
+    display: flex;
+    align-self: center;
+    width: 40rem;
+    height: 40rem;
+    border: 1px solid black;
 }
