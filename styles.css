@@ -22,24 +22,50 @@ main{
 #buttonContainer{
     display: flex;
     justify-self: start;
-    
 }
-button{
+button , input {
     width: 15rem;
     height: 3rem;
     border-radius: 50px;
     font-size: 20px;
     font-weight: 500;
-    margin: 0.5rem;
+    margin: 1rem auto;
+    cursor: pointer;
 }
+#colorButton{
+    display: flex;
+    border: none;
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem auto;
+}
+#colorButton::-webkit-color-swatch{
+    border: none;
+    border-radius: 50px;
+
+}
+
 #paintEraseContainer{
     display: flex;
     justify-content: center;
 }
 
+.active{
+    background-color: #333333;
+    color: #CECECE;
+}
+
+
 #paintEraseContainer > button{
     width: 7rem;
 
+}
+
+#sizeSliderContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #pixelContainer{
@@ -50,6 +76,7 @@ button{
 }
 
 #pixelContainer > div{
-    display: grid;
+    user-select: none;
     
 }
+

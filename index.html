@@ -16,14 +16,14 @@
     </header>
     <main>
         <div id="buttonsContainer">
-            <button id="colorButton">Color</button>
+            <input type="color" id="colorButton" value="#333333"></button>
             <div id="paintEraseContainer">
-                <button id="paintButton">Paint</button>
+                <button id="paintButton" class="active">Paint</button>
                 <button id="eraserButton">Erase</button></div>
             <button id="clearButton">Clear</button>
-            <div id="sizeSlider">
-                <button></button>
-                <h2 id="sizeValue"></h2>
+            <div id="sizeSliderContainer">
+                <input type="range" min="32" max="128" value="64" step="32" id="sizeSlider">
+                <h2 id="sizeValue">64 x 64</h2>
             </div>
         </div>
         <div id="pixelContainer"></div>
