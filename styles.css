@@ -80,3 +80,13 @@ button , input {
     
 }
 
+button:hover,
+input:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+input:active {
+    transition: transform 0.05s ease-in-out;
+    transform: scale(1);
+  }
